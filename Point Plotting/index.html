@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Graph</title>
+	</head>
+	<body>
+		<p>
+			X values: <input type="text" id="xVals" value="1,2,3"><br>
+		</p>
+
+		<p>
+			Y values: <input type="text" id="yVals" value="4,5,6"><br>
+		</p>
+
+		<button onclick="setPoints()">Draw Graph</button>
+		<button onclick="randomPoints()">Generate Random Points</button>
+		<button onclick="setPoints(); randomPoints();">Generate and Draw</button>
+		<br>
+		<br>
+		<canvas id="theCanvas" width="600" height="400"></canvas>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
