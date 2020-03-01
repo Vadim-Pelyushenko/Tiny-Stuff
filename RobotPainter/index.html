@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<!-- defer means, don't run this code until the website is finished loading -->
+		<script type="text/javascript" src="startup.js" defer></script>
+		<script type="text/javascript" src="events.js" defer></script>
+	</head>
+	<!-- onload basically means, when the website is finished loading, run this
+	function. -->
+	<body onload="drawState()">
+		<p>Use WASD to move the painting robot around</p>
+		<canvas id="myCanvas" width="500" height="500" style="border: solid;" onkeydown="handleKeyDown()"></canvas>
+		<br>
+
+		<!-- <button onclick="moveLeft()">Left</button>
+		<button onclick="moveRight()">Right</button>
+		<button onclick="moveUp()">Up</button>
+		<button onclick="moveDown()">Down</button> -->
+	</body>
+</html>
